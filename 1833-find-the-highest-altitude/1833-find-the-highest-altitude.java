@@ -6,9 +6,7 @@ class Solution {
         int altitude=0;
         for(i=0;i<n;i++){
             altitude = altitude + gain[i];
-            if(altitude>max){
-                max= altitude;
-            }
+            max= Math.max(altitude,max);
         }
         return max;
     }
